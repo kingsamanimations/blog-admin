@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Blog Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="dashboard.html">Blog Admin</a>
+        <button id="logout" type="button">Log out</button>
+    </header>
+    <main>
+        <h1>Posts</h1>
+        <p><a href="editor.html">+ New post</a></p>
+        <p id="status">Loading...</p>
+        <table id="posts-table" hidden>
+            <thead>
+                <tr><th>Title</th><th>Status</th><th>Created</th><th>Actions</th></tr>
+            </thead>
+            <tbody id="posts"></tbody>
+        </table>
+    </main>
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
